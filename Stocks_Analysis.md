@@ -10,6 +10,8 @@
 
 ### Stock Performance Analysis
 
+Pleasea see Appendix section at the end of this report for a visialized [Stock Analysis Dashboard](#appendix)
+
 ### Refactored Script Analysis
 
 ## III. Summary
