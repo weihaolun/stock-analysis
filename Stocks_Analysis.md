@@ -2,20 +2,24 @@
 
 ## I. Overview of Project
 ### Background
-We have been assisting Steve to conduct analysis on stocks with Visual Basic Application on Excel. The Dataset for this project contains trading data of 12 stocks for year 2017 and 2018. Initially, Steve was interested in Daqo New Energy Corp (ticker:DQ) and requested us to analyze the performance of this specific stock. However, after seeing the analysis result for DQ, Steve would like to see a thorough analysis for all the stocks on their volumes and returns so that he can pick the right stocks to invest. 
+We have been assisting Steve to conduct stocks analysis using Visual Basic Application on Excel. The Dataset for this project contains trading data of 12 stocks for year 2017 and 2018. Initially, Steve was interested in Daqo New Energy Corp (ticker:DQ) and requested us to analyze the performance of this specific stock. However, after seeing the result for DQ, Steve would like to see a thorough analysis of all 12 stocks' volumes and returns so that he can pick the ideal ones to invest. 
 
-For his request, the program “All Stocks Analysis” was written in VBA to print out a list of 12 tickers with Total Daily Volume and Return of each. An option to choose from 2017 and 2018 was also added to the program. Steve can easily see the data for 2017 or 2018 by clicking a button.
+To meet Steve's request, the program “All Stocks Analysis” was written in VBA to print out a list of 12 tickers with Total Daily Volume and Return of each. The program user can select either "2017" or "2018" to see the result of that year. Steve can easily see the data for 2017 or 2018 by clicking a button and inputing the year value.
 
 ### Purpose
-Program that runs well for 12 stocks may not be efficient enough for 120 stocks. Therefore, the purpose of this project is to refactor the code and improve the performance. After refactoring, the program should:
-1.	Run faster for the 12 stocks.
-2.	Run well for thousands of stocks.
+Program that runs well for 12 stocks may not be efficient enough to run for a larger number of stocks. Therefore, the purpose of this project is to refactor the code and improve the script performance. After refactoring, the program should:
+1.	Run faster for the 12 stocks;
+2.	Run well for thousands of stocks;
+3.   Has a improved code structure.
 
-This following part of this report includes the Stock Performance Analysis	for Steve, Refactored Script Analysis for us to review the refactoring process, and a Summary of pros and cons of refactoring VBA script.
+The following sections of this report include:
+1.   Stock Performance Analysis for Steve;
+2.   Refactored Script Analysis for us to review the refactoring process;
+3.   Summary of pros and cons of refactoring VBA script.
 
 ## II. Results
 ### Stock Performance Analysis
-The most important metric to measure the 12 stocks performance for this dataset is Return. Before looking into return, let’s also take a look at **Total Daily Volume 2017 vs. 2018.**
+The most important metric to measure the stocks performance for this dataset should be Return. Before looking into return, let’s also take a look at **Total Daily Volume 2017 vs. 2018.**
 
 Please see the table below for the performance analysis of stocks in 2017 and 2018. 
 ![stock_analysis_table](https://user-images.githubusercontent.com/84211948/123506937-81bf2b00-d602-11eb-80a8-291e9d9c5419.png)
