@@ -49,7 +49,14 @@ As a result, the running time of refactored code went down 80%. Please refer to 
 ![graph for report](https://user-images.githubusercontent.com/84211948/123507121-7f110580-d603-11eb-89f0-8cc987349178.png)
 
 Overall, it is because the refactored code only loops over all the rows once.
-- We created three storage points to storage the data we need for the final calculation, which are the three arrays: tickerVolumes(12), tickerStartingPrices(12) and tickerEndingPrices(12).
+- We created three storage points to store the data we need for final calculation, which are the following three arrays: tickerVolumes(12), tickerStartingPrices(12) and tickerEndingPrices(12). We also created ticker Index as a counter to count through arrays.
+```
+tickerIndex = 0
+
+Dim tickerVolumes(12) As Long
+Dim tickerStartingPrices(12) As Single
+Dim tickerEndingPrices(12) As Single
+```
 - When looping over all the rows, the following codes are processed:
 ```
 For i = 2 To Rowcount
@@ -79,6 +86,8 @@ For j = 2 To endRow
  ```
  - Therefore, the data for final calculation cannot be pulled from any memory point, the program need to go back to the loop and retrieve the data from variables.
 
+In this project arrays are the key to improve script performance. When we have many variables of the same type, using arrays to store these data collections is more efficient. In addition to the fact that array helps to save the memory of the computuer system, it also collects and stores data in a sequential manner and make it efficient to track data by using the index values. (Singh, 2021)
+
 ## III. Summary
 ### Pros and Cons of Refactoring Code
 **Pros**
@@ -97,7 +106,7 @@ For j = 2 To endRow
 **Pros**
 - Refactored scrip definitely decreased execution time for this project. As mentioned in above [section](#refactored-script-analysis), the running time went down 80%. 
 - Also, to comply with the purpose of this project, refactored code can work well on larger dataset with thousands of stocks.
-- The refactored code is better structured. If Steve would like to conduct stocks for other years, or add more years, this can be easily done by re-using the code structure.
+- The refactored code is better structured and increased reusability. If Steve would like to conduct stocks for other years, or add more years, this can be easily done by re-using the code structure.
 
 **Cons**
 - The refactoring process did cost more time for me to re-write the code and to fully understand the code. 
@@ -110,4 +119,7 @@ In conclusion, this refactoring process was a good practice for beginners. I lea
 
 ![Stock_Analysis_Dashboard](https://user-images.githubusercontent.com/84211948/123497426-2fade380-d5c9-11eb-81d6-d76027a6ee37.png)
 
+### Reference
+Singh, A. (2021, April 9). _Advantages of Array: Know The Topmost 10 Significant Benefits Of Array._ EDUCBA.     
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;https://www.educba.com/advantages-of-array/. 
 
